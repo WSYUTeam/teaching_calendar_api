@@ -1,5 +1,4 @@
 <?php
-//$dsn = 'mysql:dbname=sqlmoodle;host=127.0.0.1';
 header('content-type:application/json;charset=utf-8');
 $dsn = 'mysql:dbname=moodle_xiaoli;host=218.199.144.142';
 $user = 'moodle_xiaoli';//sqlmoodle

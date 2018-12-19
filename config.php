@@ -7,7 +7,7 @@
 //     $dbh = new PDO($dsn, $user, $password);
 //     // echo "连接成功";
 // } catch (PDOException $e) {
-//     $obj->getMessage = '1001' ;//链接远程数据库失败
+//     $obj->status = '1001' ;//链接远程数据库失败
 //     echo json_encode($obj);
 //     exit;
 // }
@@ -16,7 +16,7 @@
  */
 class database_config 
 {
-	public $getMessage = '';
+	public $status = '';
 	// public $dbh;
 	//数据库配置信息  start
 	private $dsn = 'mysql:dbname=moodle_xiaoli;host=218.199.144.142';
@@ -28,10 +28,10 @@ class database_config
 		global $db;
 		try {
 		    $db = new PDO($this->dsn, $this->user, $this->password);
-		    return $this->getMessage = '1000' ;//链接远程数据库成功
+		    return $this->status = '1000' ;//链接远程数据库成功
 		    //return true;
 		} catch (PDOException $e) {
-		    return $this->getMessage = '1001' ;//链接远程数据库失败
+		    return $this->status = '1001' ;//链接远程数据库失败
 		    //print "连接失败le \n";
 		    // return false;
 		}

@@ -40,14 +40,14 @@ try {
 	    	// alert(data['status']);
 		  $("#status").html(data['status']);
 			//alert(data['weekly'].length);
-			$weekly_html = '';
+			// $weekly_html = '';
 			for($weekly_i=0; $weekly_i<data['weekly'].length; $weekly_i++) {
-				$weekly_html += "<div>"+data['weekly'][$weekly_i]+"</div>";
+				// $weekly_html += "<div>"+data['weekly'][$weekly_i]+"</div>";
 				//日历获取对应值
 				$(".teaching_calendar:eq("+$weekly_i+")").text(data['weekly'][$weekly_i]);
 				// alert($weekly_html);
 			}	
-		  $("#weekly").html($weekly_html);
+		  // $("#weekly").html($weekly_html);
 		},"json");
 		// $.get("teaching_calendar.php?XLRQ=1", function(data){
 		//   $("#data_XLRQ").html(data);

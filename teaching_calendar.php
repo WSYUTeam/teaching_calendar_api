@@ -1,6 +1,6 @@
 <?php
 header('content-type:application/json;charset=utf-8');
-require_once "config.php"; 
+require_once $_SERVER['DOCUMENT_ROOT']."/moodle/teaching_calendar_config.php"; 
 // if(!isset($_GET['year'])) {
 // 	$_GET['year'] = date('Y');
 // }
